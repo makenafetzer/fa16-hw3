@@ -1,0 +1,15 @@
+<form action="/students" method="POST">
+  <label>Full name</label>
+  <input name="full_name" type="text"></input>
+  <label>Favorite Food</label>
+  <input
+    name="favorite_food"
+    placeholder=<%= @placeholder_food %>
+    type="text"
+  >
+  </input>
+  <label>Number of Dogs</label>
+  <input name="dog_count" type="text"></input>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <button type="submit">Create student</button>
+</form>
